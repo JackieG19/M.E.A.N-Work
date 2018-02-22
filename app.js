@@ -5,8 +5,9 @@ var app = express();
 
 app.get("/cities", function(request, response){
   var blocks = ['Providence', 'Cranston', 'Warwick', 'Pawtucket', 'Johnston'];
+  
   if (request.query.limit >= 0){
-        response.status('error');
+        response.json(blocks.slice(0, request.query.limit));
     } else{
     response.json(blocks);
     }
@@ -15,8 +16,6 @@ app.get("/cities", function(request, response){
   //response.sendFile(__dirname + "/public/index.html");
   // Create an index route that refers to the following file requirement.
 }); 
-
-
 
 app.use(express.static('public'));
 
