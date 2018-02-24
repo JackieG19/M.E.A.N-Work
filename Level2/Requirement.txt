@@ -1,0 +1,18 @@
+CodeSchool Express Level 2
+
+Create a simple express node app meeting the following requirements:
+
+1. Create an express app.
+
+2. Create a /cities route in your app.js file with at least 4 cities.
+
+3. Create an index route that refers to the following file requirement.
+
+4. Create index.html in a folder called public:
+    a. Index.html
+    b. Include an H1 header
+    c. Include a form with an empty selection element
+    d. Link up a js file.
+
+5. Create JS file for the index.html file. that will make an ajax 
+request to /cities and display each city inside the selection element.
