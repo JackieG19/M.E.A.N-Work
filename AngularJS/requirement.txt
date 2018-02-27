@@ -1,0 +1,29 @@
+CS - Mean Stack Angular Full Project: Car rental in angular
+
+Overview:
+You have a car rental company and you want to start creating the skeletal structure of a car rental site. 
+You decide to work on the front end only to begin with. The site should have all cars listed and 
+some details should be present including the daily rental price as well as a Rent Now button. 
+If the car is not available the the picture of the car should display but only the words 
+Unavailable should appear with no button.
+
+1. User stories (minimums)
+
+2. Car Rental shop title
+    a. A section for each car with the following items (dynamic)
+    b. Car image
+    c. Car type
+    d. Car description
+    e. Daily rental price: add a filter to print as currency
+    f. Rent now button
+    g. Add something else of your own choosing.
+    
+3. If the car is not available
+    a. Car image
+    b. Car type
+    c. Unavailable shown
+    
+4. If the rent now button is clicked it should update your objects amount available.
+
+NOTES:
+To create this you must use angular directives, controllers and filters.

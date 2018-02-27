@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <title>Car Rental</title>
+</head>
+<body ng-controller="StoreController as store">
+    <h1 class="text-center">Car Rental</h1>
+    <ul class="list-group text-center">
+        <li class="list-group-item" ng-hide="product.soldOut" ng-repeat="product in store.products">
+            <h3>{{product.type}} <em class="pull-right">{{product.price | currency}}</em> <img ng-src="{{product.images[0].full}}"> 
+            <br><button ng-show="product.canPurchase">Rent This</button></h3>
+            <section class="tab" ng-init="tab = 1">
+                <ul class="nav nav-pills">
+                    <li ng-class="{ active:tab === 1 }">
+                        <a href="" ng-click="tab = 1">Description</a>
+                    </li>
+                    <li ng-class="{ active:tab === 2}">
+                        <a href="" ng-click="tab = 2">Specifications</a>
+                    </li>
+                    <li ng-class="{ active:tab === 3}">
+                        <a href="" ng-click="tab = 3">Reviews</a>
+                    </li>
+                </ul>
+            </section>
+            <div class="panel" ng-show="tab === 1">
+                <h4>Description</h4>
+                <p>{{product.description}}</p>
+            </div>
+            <div class="panel" ng-show="tab === 2">
+                <h4>Specifications</h4>
+                <blockquote>
+                  Returns, Reservation, Servicing
+                </blockquote>
+            </div>
+            <div class="panel" ng-show="tab === 3">
+                <h4>Reviews</h4>
+                <blockquote>
+                    No Reviews yet. Be the first one!
+                </blockquote>
+            </div>
+        </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js" type="text/javascript">
+    </script> 
+    <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script> 
+    <script src="app.js" type="text/javascript">
+    </script>
+</body>
+</html>
