@@ -1,0 +1,47 @@
+CodeSchool Mongo Level 3
+
+Create a gaming database and collections
+
+It’s recommended to create this database but is not needed. 
+For this item assume the database will have the monster collection. 
+Assume a document will have the following data schema:
+
+{
+	"name": "Bat",
+	"Level": 4,
+	"health": 25,
+	"type": "Flying",
+	"attacks": ["scratch", "bite"],
+	"stats": {
+		"attack": 5,
+		"defense": 2
+	}
+	"style": "cool"
+}
+
+In a file called mongo.js create the following commands. 
+To help with syntax have your file look like this:
+
+var mongo = function(db) {
+
+};
+
+Requirements:
+
+1. Write the command that will find all monsters with an attack lower than 10
+
+2. Write the command that will find all monsters with a level above 5 but below 15 inclusive
+
+3. Write the command to find monsters that do not have the “bite” attack.
+
+4. Write the command to find monsters with levels less than 
+   6 but only return the name, level and health attributes
+
+5. Write the command to find all monsters who attack is between 
+   10 and 20 but do not include the monsters health or style
+
+6. Write the command to find out how many monsters are in the collection.
+
+7. Write the command to sort the collection by the monsters level 
+   with the highest level at the top and the lowest at the bottom
+
