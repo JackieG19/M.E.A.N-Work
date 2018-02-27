@@ -1,0 +1,45 @@
+CodeSchool Mongo Level 1
+
+Create a gaming database and collections
+
+Requirements: 
+
+1. Create a new mongo database called myGame.
+
+    a. Using the shell create a “monsters” collection
+    
+    b. Insert at least 2 documents
+    
+    c. Each document should contain:
+        - “Name”
+        - “Health”
+        - Last fought (date)
+        
+        - Attacks (array)
+            I. Enter 3 names for attacks a monster could do example: “bite”
+            
+        - Stats (object)
+            I. Attack (number)
+            II. Defense (number)
+            
+2. Create a mongo.js file
+
+3. Inside the file:
+
+a. Create a function that accepts the 4 attributes plus a 5th variable called db. 
+   This variable would reference the mongodb like in the shell. 
+
+b. Write the javascript code that would insert the four attributes 
+   into the “monster” collection as a new document.
+
+c. Write the code that would then console.log all the documents inside the collection.
+
+d. Write the command that will find your monster based on a name
+
+e. Write the command that will find a monster based on one of the attacks it has 
+(if possible use a command that will return more than one monster with the same attack type)
+
+f. Write the command that will find a monster based on their defense stat.
+
+Note: you do not need to run the file to confirm it works. 
+Writing the same lines in the mongo console should do this. This is just to confirm you know the syntax.
