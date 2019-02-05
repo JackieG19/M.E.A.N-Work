@@ -1,4 +1,4 @@
-# MEAN-stack-Work
+# M.E.A.N small Project Work
 
 **Angular - Car rental project**
 
@@ -28,3 +28,8 @@ Overview: An express app
 - A root route that returns “Hello World”
 - A ‘/name’ route that returns your name
 - A /redirect route with a permanently status code
+___
+
+**Using Node**
+- making sure the app is up and running properly
+- shows any bugs or error when the app crashes
